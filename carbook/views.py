@@ -1,23 +1,23 @@
 from django.shortcuts import render
 
-def Home(request):
+def home(request):
     return render(request, 'index.html')
 
-def About(request):
-    return render(request, 'About.html')
+def about(request):
+    return render(request, 'about.html')
 
-def Services(request):
-    return render(request, 'Services.html')
+def services(request):
+    return render(request, 'services.html')
 
-def Pricing(request):
-    return render(request, 'Pricing.html')
+def pricing(request):
+    return render(request, 'pricing.html')
 
-def Cars(request):
-    return render(request, 'Cars.html')
+def cars(request):
+    return render(request, 'car.html')
 
-def Blog(request):
-    return render(request, 'Blog.html')
+def blog(request):
+    return render(request, 'blog.html')
 
-def Contact(request):
-    return render(request, 'Contact.html')
+def contact(request):
+    return render(request, 'contact.html')
 

@@ -37,21 +37,38 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="{% static 'index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="{% static 'about.html'%}" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="{% static 'services.html'%}" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="{% static 'pricing.html'%}" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="{% static 'car.html'%}" class="nav-link">Cars</a></li>
-	          <li class="nav-item"><a href="{% static 'blog.html'%}" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="{% static 'contact.html'%}" class="nav-link">Contact</a></li>
-	        </ul>
+
+<ul class="navbar-nav">
+    <li class="nav-item active">
+        <a href="{% url 'home' %}" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% static 'about.html' %}" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% static 'services.html' %}" class="nav-link">Services</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% static 'pricing.html' %}" class="nav-link">Pricing</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% static 'car.html' %}" class="nav-link">Cars</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% static 'blog.html' %}" class="nav-link">Blog</a>
+    </li>
+    <li class="nav-item">
+        <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+    </li>
+</ul>
+
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+
+      <div class="hero-wrap ftco-degree-bg" style="background-image: url('{% static 'images/bg_1.jpg' %}');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">

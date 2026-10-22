@@ -14,19 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path, include
 
-
-
 urlpatterns = [
-    # Tilni almashtirish (POST so'rovlarini qabul qilish) uchun havola
-    path('i18n/', include('django.conf.urls.i18n')),
-]
-
-# Sayt manzillari oldiga til prefiksini (/uz/, /ru/, /en/) qo'shish
-urlpatterns +=(
     path('admin/', admin.site.urls),
     path('', include('carbook.urls')),
-    path('contact/', views.contact, name='contact'),
-)
+]
+
+
